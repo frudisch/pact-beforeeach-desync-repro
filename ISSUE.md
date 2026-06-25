@@ -39,7 +39,15 @@ interactions, yet the build is green.
 
 ### Steps to reproduce
 
-Minimal repo: <link>. Or:
+Minimal repo: https://github.com/frudisch/pact-beforeeach-desync-repro
+
+```bash
+npm install
+npm run verify            # bug: one transient beforeEach failure
+NO_THROW=1 npm run verify # control: no failure
+```
+
+Or:
 
 1. A pact with 3 interactions.
 2. A `Verifier` whose `beforeEach` throws on its first invocation only.
