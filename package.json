@@ -1,0 +1,13 @@
+{
+  "name": "pact-beforeeach-desync-repro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Repro: a failing beforeEach desyncs the global hook counter and silently disables beforeEach/afterEach for all later interactions",
+  "scripts": {
+    "verify": "node verify.js"
+  },
+  "dependencies": {
+    "@pact-foundation/pact": "16.0.4",
+    "express": "^4.19.2"
+  }
+}

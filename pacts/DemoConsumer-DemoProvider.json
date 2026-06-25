@@ -1,0 +1,36 @@
+{
+  "consumer": { "name": "DemoConsumer" },
+  "provider": { "name": "DemoProvider" },
+  "interactions": [
+    {
+      "description": "interaction 1 - GET /one",
+      "request": { "method": "GET", "path": "/one" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json" },
+        "body": { "ok": true }
+      }
+    },
+    {
+      "description": "interaction 2 - GET /two",
+      "request": { "method": "GET", "path": "/two" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json" },
+        "body": { "ok": true }
+      }
+    },
+    {
+      "description": "interaction 3 - GET /three",
+      "request": { "method": "GET", "path": "/three" },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json" },
+        "body": { "ok": true }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": { "version": "3.0.0" }
+  }
+}
